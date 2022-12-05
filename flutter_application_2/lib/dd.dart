@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 class Mypage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,23 @@ class Mypage extends StatelessWidget {
                 ),
               ],
             ),
-            Container(),
+            Container(
+              child:SizedBox(
+                child:Image(image: AssetImage("asset/jm_video_6 _1.png"),),
+              ),
+            ),
+            Container(
+              child:  Column(
+                children: [
+                  Text("TechMe is a conference ,meetup and",
+                        style: TextStyle(color:Color.fromARGB(255, 17, 15, 15),
+                        fontWeight: FontWeight.bold,),),
+                  Text("Community Gathering planning App",
+                        style: TextStyle(color:Color.fromARGB(255, 17, 15, 15),
+                        fontWeight: FontWeight.bold),),
+                ],
+              ),
+            ),
             Container(),
             Container(),
             Container(),
